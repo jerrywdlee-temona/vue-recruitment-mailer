@@ -140,7 +140,7 @@
         </div>
         <div class="toolBar">
           <button class="uk-button uk-button-danger"
-          :disabled="selectedTags[0]? false : true"
+          :disabled="selectedTags.length>0? false : true"
           @click="delTag">
             <i class="uk-icon-justify uk-icon-trash"></i>
             <span class="vmail_label">Delete</span>
@@ -786,7 +786,7 @@ export default {
     opacity: 0.1;
   }
   div.workspace-background>img{
-    margin-bottom: 45px;
+    margin-bottom: 60px;
 
   }
 

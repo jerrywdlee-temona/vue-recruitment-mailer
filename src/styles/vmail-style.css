@@ -88,7 +88,7 @@ h1 {
   }*/
 }
 
-@media (max-width: 959px) {
+@media (min-width: 768px) and (max-width: 959px) {
   div.mailRender.uk-panel, div.tagbar.uk-panel {
     height: 37vh;
   }
@@ -111,11 +111,26 @@ h1 {
   img.vmail-logo{
     height: 30px !important;
   }
+  .github-banner{
+    top: 9px !important;
+  }
 }
 
 @media (max-width: 450px) {
   div.adress-inner-div>table.vmail_to_address, div.adress-inner-div>table.vmail_cc_address {
     width: 98%;
     float: left;
+  }
+  .github-banner{
+    right: 5px !important;
+  }
+  .github-banner>b{
+    display: none;
+  }
+}
+
+@@media (min-width: 959px) {
+  div.workspace-background>img{
+    margin-bottom: 75px !important;
   }
 }
